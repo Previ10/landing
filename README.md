@@ -67,3 +67,6 @@ export default tseslint.config([
   },
 ])
 ```
+## arrancar 
+
+npm run dev
