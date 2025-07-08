@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
-    "idle"
+    "idle",
   );
 
   const sendEmail = (e: React.FormEvent) => {
@@ -18,16 +19,13 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE,
         import.meta.env.VITE_EMAILJS_TEMPLATE,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC
+        import.meta.env.VITE_EMAILJS_PUBLIC,
       )
       .then(() => setStatus("sent"))
       .catch((error) => {
         console.error("Error al enviar email:", error);
         setStatus("error");
-        console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC);
-
       });
-
   };
 
   return (
@@ -84,6 +82,8 @@ const Contact = () => {
           )}
         </form>
       )}
+
+
     </section>
   );
 };
