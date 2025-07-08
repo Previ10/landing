@@ -1,5 +1,5 @@
 import background from "../assets/background.jpg";
-import avatar     from "../assets/profile.jpeg";
+import avatar from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
@@ -15,16 +15,18 @@ const Hero = () => {
       />
 
       {/* capa 2: filtro oscuro + degradado */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-purple-900/80 mix-blend-multiply" />
+     <div className="absolute inset-0 backdrop-blur-[1px] bg-black/10" />
+
+
 
       {/* capa 3: contenido */}
       <div className="relative z-10 text-white flex flex-col items-center">
         {/* Avatar circular */}
-       <img
-  src={avatar}
-  alt="Ignacio Previgliano"
-  className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-white shadow-2xl mb-10"
-/>
+        <img
+          src={avatar}
+          alt="Ignacio Previgliano"
+          className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-white shadow-2xl mb-10"
+        />
 
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
           Ignacio Previgliano
