@@ -1,15 +1,15 @@
 // src/App.tsx
-import { Hero, About, Projects, Skills, Contact } from "./core/imports";
+import { Layout, Hero, About, Projects, Skills, Contact } from "./core/imports";
 
 function App() {
   return (
-    <div>
+    <Layout>
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Contact />
-    </div>
+    </Layout>
   );
 }
 
