@@ -6,10 +6,12 @@ import postgresLogo from "../assets/postgresql.svg";
 import supabaseLogo from "../assets/supabase.svg";
 import nodeLogo from "../assets/node.js.svg";
 import githubLogo from "../assets/github.svg";
-import flutterLogo from "../assets/flutterio-icon.svg";
 import nestJsLogo from "../assets/nestjs.svg";
 import graphQLLogo from "../assets/graphql.svg";
 import n8nLogo from "../assets/n8n.svg";
+import flutterpng from "../assets/icon_flutter.png";
+
+
 
 type Skill = {
   name: string;
@@ -18,7 +20,7 @@ type Skill = {
 };
 
 const techStack: Skill[] = [
-  { name: "Flutter", logo: flutterLogo, url: "https://flutter.dev" },
+  { name: "Flutter", logo: flutterpng, url: "https://flutter.dev" },
   { name: "React", logo: reactLogo, url: "https://react.dev" },
   { name: "NestJS", logo: nestJsLogo, url: "https://nestjs.com" },
   { name: "GraphQL", logo: graphQLLogo, url: "https://graphql.org" },
