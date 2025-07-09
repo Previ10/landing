@@ -1,3 +1,4 @@
+// src/App.tsx
 import { Layout, Hero, About, Projects, Skills, Contact, Footer } from "./core/imports";
 
 function App() {
